@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+# GIGIH 3.0 Final Project (Frontend)
+This is a project clone [Tokopedia Play](https://www.tokopedia.com/play/channels) using simple and very straight forward features and UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- User can open, at least two page
+    - Home
+    - Video Detail Page
+- User can see video list with thumbnail from YouTube in home page
+- User can click each video and go to video detail page
+- User can see list products, embed YouTube, list comment, and form submit comment
+- User just need input name and comment when submit comment in form
+- User can see their comment in list comment section after success submit comment
+- User also can search product from list product
 
-Currently, two official plugins are available:
+## How to Install & Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. First you need to clone this repo into your local machine
+  ```bash
+git clone https://github.com/muhnurichsan/gigih_final-project.git
+```
+2. Use npm as package manager [npm](https://www.npmjs.com/) to install project packages.
+```bash
+npm install
+```
+3. Before run duplicate .env.example file and rename it into .env and change BASE_URL_API into hosted API_URL which has been shared
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+4. Run project using this command
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Database Schema
+You can see details about the database schema [here](https://github.com/muhnurichsan/gigih_midterm-project)
